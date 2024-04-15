@@ -1,0 +1,104 @@
+Package: alsa-ucm-conf-cros
+Version: 0.5-0
+Architecture: arm64
+Maintainer: Amy King <amy@amyrom.tech>
+Installed-Size: 156
+Depends: alsa-ucm-conf
+Filename: ./alsa-ucm-conf-cros_0.5-0_arm64.deb
+Size: 11324
+MD5sum: 1c7bae6c8e6c9a904eccde08bdcca830
+SHA1: 8a5ec77fe41c72dc9915ba01953828f0480d1da2
+SHA256: 956fea9525e74d8fbba25a050077b96a20a8de6ed84fe32cc6b490713ee04535
+Section: base
+Priority: optional
+Homepage: https://github.com/WeirdTreeThing/alsa-ucm-conf-cros
+Description: ALSA UCM configuration for ChromeOS devices
+
+Package: device-google-kukui
+Version: 1-0
+Architecture: arm64
+Maintainer: Amy King <amy@amyrom.tech>
+Installed-Size: 12
+Depends: linux-image-6.6.25-mt8183+, alsa-ucm-conf-cros, depthcharge-tools, soc-mediatek-mt8183
+Filename: ./device-google-kukui_1-0_arm64.deb
+Size: 1960
+MD5sum: 01f91faf06b1233b306491f30e6c851b
+SHA1: b5e5dff9614d7bddebe9370144d3583bb6e96fe1
+SHA256: 3c7252051dcccaa6234bd7a7a154e78a4dffefa99f95dcc7edd4b0de6e36e288
+Section: base
+Priority: optional
+Homepage: https://ubuntu-touch.io
+Description: Device package for mt8183 ChromeOS devices
+
+Package: linux-headers-6.6.25-mt8183+
+Source: linux-upstream
+Version: 6.6.25-00016-gc6af8ab7903d-3
+Architecture: arm64
+Maintainer: amelia <amelia@ameliadesktop>
+Installed-Size: 51687
+Filename: ./linux-headers-6.6.25-mt8183+_6.6.25-00016-gc6af8ab7903d-3_arm64.deb
+Size: 8792690
+MD5sum: d3e322c1972b235e952e02c6f54a868f
+SHA1: 15ae30b175c5b445600dc1cce6a3cc5c260a1a02
+SHA256: 0eaf891148d6d28170ebb3c9a96adca1500b54cf71e8036e2d27fd40c3b1aac2
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.6.25-mt8183+ on arm64
+ This package provides kernel header files for 6.6.25-mt8183+ on arm64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-6.6.25-mt8183+
+Source: linux-upstream
+Version: 6.6.25-00016-gc6af8ab7903d-3
+Architecture: arm64
+Maintainer: amelia <amelia@ameliadesktop>
+Installed-Size: 61537
+Filename: ./linux-image-6.6.25-mt8183+_6.6.25-00016-gc6af8ab7903d-3_arm64.deb
+Size: 20346520
+MD5sum: 9a1aef5ff53199155302f493b6c60f4c
+SHA1: b4934fca3adf5123c4f4f4f9ce94c3b39bfce0d7
+SHA256: d4c8492d0ba86081a89f5a6cebcf586db55fba43fe89ee3decb2970153c35a24
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.6.25-mt8183+
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.6.25-mt8183+.
+
+Package: linux-libc-dev
+Source: linux-upstream
+Version: 6.6.25-00016-gc6af8ab7903d-3
+Architecture: arm64
+Maintainer: amelia <amelia@ameliadesktop>
+Installed-Size: 6712
+Provides: linux-kernel-headers
+Filename: ./linux-libc-dev_6.6.25-00016-gc6af8ab7903d-3_arm64.deb
+Size: 1336290
+MD5sum: 19667bd58ba2f0f97a878d1781d4dbea
+SHA1: e44b5520c6334f0ab4ec708f0c2ab983219f880f
+SHA256: db1c931ab7084d0f7ef43100eae16dbc98189853bd85c0cb76b71edbd2940b30
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: soc-mediatek-mt8183
+Version: 2-2
+Architecture: arm64
+Maintainer: Amy King <amy@amyrom.tech>
+Installed-Size: 14
+Filename: ./soc-mediatek-mt8183_2-2_arm64.deb
+Size: 1756
+MD5sum: 0b258389a86f901333aef4f273eb2ae6
+SHA1: 94dd530aea890d2a86b53430861c5870eea653f1
+SHA256: 018b9e1bedb840d7ae544d03a013f4543c82314481d8b4a5c8178bd29a167711
+Section: base
+Priority: optional
+Homepage: https://gitlab.com/postmarketOS/pmaports/-/tree/master/device/community/soc-mediatek-mt8183
+Description: Common package for Mediatek MT8183 devices
+
