@@ -14,6 +14,34 @@ Priority: optional
 Homepage: https://github.com/WeirdTreeThing/alsa-ucm-conf-cros
 Description: ALSA UCM configuration for ChromeOS devices
 
+Package: depthcharge-tools
+Version: 0.6.2-1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 435
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: python3-pkg-resources, python3:any (>= 3.7~), linux-base, u-boot-tools, device-tree-compiler, vboot-utils, vboot-kernel-utils, cgpt, lz4, xz-utils
+Suggests: zstd, bzip2, lzop
+Filename: ./depthcharge-tools_0.6.2-1_all.deb
+Size: 93296
+MD5sum: 86073e3e9ee6fe40556fb574dff2cb1b
+SHA1: 16b96894465e8ac04ef6b58a3cfc284b47cc96a9
+SHA256: e64d69cd475920c597bc831973a63dea7dd7c164d4358319f79009f0dbb8d06d
+Section: admin
+Priority: optional
+Homepage: https://github.com/alpernebbi/depthcharge-tools
+Description: Tools for ChromeOS firmware/bootloader integration
+ The built-in firmware on ChromeOS devices has a custom verified boot
+ implementation that can only boot from special images written to
+ partitions of a certain type. This package provides tools that create
+ these images for the running system and manage these partitions.
+ .
+ On ChromeOS devices, this also provides hooks to keep Debian bootable
+ via the firmware's custom verified boot method by automatically
+ building boot images and writing them to appropriate partitions
+ whenever a kernel or an initramfs change happens.
+Original-Maintainer: Debian Python Team <team+python@tracker.debian.org>
+
 Package: device-google-kukui
 Version: 1-0
 Architecture: arm64
